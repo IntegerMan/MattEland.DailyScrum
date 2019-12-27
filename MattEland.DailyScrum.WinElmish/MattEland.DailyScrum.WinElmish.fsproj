@@ -7,7 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="KillAllDefectsSymbol.ico" />
+    <Compile Include="Model.fs" />
+    <Compile Include="TurnProcessor.fs" />
+    <Compile Include="ElmProcessor.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 

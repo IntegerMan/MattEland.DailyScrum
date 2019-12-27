@@ -19,13 +19,9 @@ let update (msg: Msg) (model: Model) : Model =
   model
 
 let bindings () : Binding<Model, Msg> list = [
-  //"CounterValue" |> Binding.oneWay (fun m -> m.Count)
+  "AppTitle" |> Binding.oneWay (fun _ -> "Hello Elmish.WPF")
   //"Increment" |> Binding.cmd Increment
   //"Decrement" |> Binding.cmd Decrement
-  //"StepSize" |> Binding.twoWay(
-//    (fun m -> float m.StepSize),
-    //(int >> SetStepSize)
-  //)
 ]
 
 [<EntryPoint; STAThread>]

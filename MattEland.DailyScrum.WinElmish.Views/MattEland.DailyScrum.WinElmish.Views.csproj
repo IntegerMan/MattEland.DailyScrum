@@ -5,4 +5,16 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="KillAllDefectsSymbol.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Telerik.Windows.Controls.for.Wpf" Version="2019.3.1023" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="KillAllDefectsSymbol.ico" />
+  </ItemGroup>
+
 </Project>

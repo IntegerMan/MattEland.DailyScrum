@@ -9,6 +9,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Telerik.Windows.Automation.Peers;
+using Telerik.Windows.Controls;
 
 namespace MattEland.DailyScrum.WinElmish.Views
 {
@@ -19,6 +21,7 @@ namespace MattEland.DailyScrum.WinElmish.Views
     {
         public MainWindow()
         {
+            //StyleManager.ApplicationTheme = new MaterialTheme();
             InitializeComponent();
         }
     }

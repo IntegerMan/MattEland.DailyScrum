@@ -11,6 +11,9 @@
 
   <ItemGroup>
     <PackageReference Include="Telerik.Windows.Controls.for.Wpf" Version="2019.3.1023" />
+    <PackageReference Include="Telerik.Windows.Controls.Navigation.for.Wpf" Version="2019.3.1023" />
+    <PackageReference Include="Telerik.Windows.Data.for.Wpf" Version="2019.3.1023" />
+    <PackageReference Include="Telerik.Windows.Themes.Material.for.Wpf" Version="2019.3.1023" />
   </ItemGroup>
 
   <ItemGroup>

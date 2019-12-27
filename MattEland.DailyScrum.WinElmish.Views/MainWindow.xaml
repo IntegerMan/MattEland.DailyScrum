@@ -3,11 +3,12 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:MattEland.DailyScrum.WinElmish.Views"
         Icon="KillAllDefectsSymbol.ico"
         mc:Ignorable="d"
         Title="{Binding AppTitle}" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+    <StackPanel>
+        <TextBlock>It is currently</TextBlock>
+        <TextBlock Text="{Binding TurnNumber}"></TextBlock>
+        <Button Command="{Binding NextTurnCommand}">Next Turn</Button>
+    </StackPanel>
 </Window>

@@ -1,5 +1,4 @@
 ﻿open System
-open Elmish
 open Elmish.WPF
 open MattEland.DailyScrum.WinElmish.Views
 
@@ -16,12 +15,14 @@ type Msg =
   | Restart
 
 let update (msg: Msg) (model: Model) : Model =
-  model
+  match msg with 
+  | NextTurn -> {model with Turns = model.Turns + 1}
+  | Restart -> init()
 
 let bindings () : Binding<Model, Msg> list = [
-  "AppTitle" |> Binding.oneWay (fun _ -> "Hello Elmish.WPF")
-  //"Increment" |> Binding.cmd Increment
-  //"Decrement" |> Binding.cmd Decrement
+  "AppTitle" |> Binding.oneWay (fun _ -> "Daily Scrum by Matt Eland")
+  "NextTurnCommand" |> Binding.cmd NextTurn
+  "TurnNumber" |> Binding.oneWay (fun m -> "Turn " + m.Turns.ToString())
 ]
 
 [<EntryPoint; STAThread>]

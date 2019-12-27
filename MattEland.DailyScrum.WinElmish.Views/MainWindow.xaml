@@ -18,11 +18,12 @@
 
     <DockPanel>
         <!-- Sidebar -->
-        <Grid DockPanel.Dock="Left" Width="250">
-            <telerik:RadTreeView ItemsSource="{Binding Servers}" 
-                                 DisplayMemberPath="Name">
-            </telerik:RadTreeView>
-        </Grid>
+        <telerik:RadPanelBar DockPanel.Dock="Left" ExpandMode="Multiple" MinWidth="200">
+            <telerik:RadPanelBarItem Header="Team" IsExpanded="True" />
+            <telerik:RadPanelBarItem Header="Work Items" IsExpanded="True" />
+            <telerik:RadPanelBarItem Header="Servers" IsExpanded="True" ItemsSource="{Binding Servers}" DisplayMemberPath="Name" />
+            <telerik:RadPanelBarItem Header="Applications" IsExpanded="True" />
+        </telerik:RadPanelBar>
 
         <telerik:RadButton Command="{Binding NextTurnCommand}" DockPanel.Dock="Bottom">Next Turn</telerik:RadButton>
 

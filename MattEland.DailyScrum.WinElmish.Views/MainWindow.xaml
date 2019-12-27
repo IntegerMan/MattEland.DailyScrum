@@ -24,11 +24,12 @@
             </telerik:RadTreeView>
         </Grid>
 
+        <telerik:RadButton Command="{Binding NextTurnCommand}" DockPanel.Dock="Bottom">Next Turn</telerik:RadButton>
+
         <!-- Main Content Area -->
         <StackPanel>
             <TextBlock>It is currently</TextBlock>
             <TextBlock Text="{Binding TurnNumber}"></TextBlock>
-            <telerik:RadButton Command="{Binding NextTurnCommand}">Next Turn</telerik:RadButton>
         </StackPanel>
     </DockPanel>
 </Window>

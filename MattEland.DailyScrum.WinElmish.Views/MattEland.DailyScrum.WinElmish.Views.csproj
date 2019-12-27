@@ -10,10 +10,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="JetBrains.Annotations" Version="2019.1.3" />
     <PackageReference Include="Telerik.Windows.Controls.for.Wpf" Version="2019.3.1023" />
     <PackageReference Include="Telerik.Windows.Controls.Navigation.for.Wpf" Version="2019.3.1023" />
     <PackageReference Include="Telerik.Windows.Data.for.Wpf" Version="2019.3.1023" />
-    <PackageReference Include="Telerik.Windows.Themes.Material.for.Wpf" Version="2019.3.1023" />
+    <PackageReference Include="Telerik.Windows.Themes.Crystal.for.Wpf" Version="2019.3.1023" />
+    <PackageReference Include="Telerik.Windows.Themes.Expression_Dark.for.Wpf" Version="2019.3.1023" />
+    <PackageReference Include="Telerik.Windows.Themes.Fluent.for.Wpf" Version="2019.3.1023" />
+    <PackageReference Include="Telerik.Windows.Themes.Green.for.Wpf" Version="2019.3.1023" />
   </ItemGroup>
 
   <ItemGroup>
